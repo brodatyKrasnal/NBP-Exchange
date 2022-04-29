@@ -21,13 +21,13 @@ class ExchangeCalculatorVC: UIViewController {
     
     var rateToDouble : Double = 0
     
-    var exchangeManager = ExchangeManager()
+    var ratesManager = RatesManager()
     let currencies = ["CAD","USD","EUR","GBP","HUF","CZK"]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        exchangeManager.delegate = self
+        ratesManager.delegate = self
         currencyPicker.delegate = self
         amountToExchange.delegate = self
         
@@ -91,14 +91,14 @@ extension ExchangeCalculatorVC: UIPickerViewDataSource, UIPickerViewDelegate {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        exchangeManager.checkCurrencies(for: currencies[row])
+        ratesManager.checkCurrencies(for: currencies[row])
     }
     
     
 }
 
-extension ExchangeCalculatorVC : ExchangeManagerDelegate {
-    func exchangeDetailsReceived(_ exchangeManager: ExchangeManager, exchange: CurrencyExchangeModel) {
+extension ExchangeCalculatorVC : RatesManagerDelegate {
+    func exchangeDetailsReceived(_ exchangeManager: RatesManager, exchange: CurrencyExchangeModel) {
         DispatchQueue.main.async { [self] in
             RateDescriptionLabel.isHidden = false
             ValueDescriptionLabel.isHidden = false
@@ -111,4 +111,5 @@ extension ExchangeCalculatorVC : ExchangeManagerDelegate {
     }
     
 }
+
 

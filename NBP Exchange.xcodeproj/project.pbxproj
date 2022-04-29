@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CF312DB327F61112006E9DA8 /* ExchangeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF312DB227F61112006E9DA8 /* ExchangeManager.swift */; };
+		6715D30F27FF23EA003A7234 /* ExchangeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6715D30E27FF23EA003A7234 /* ExchangeManager.swift */; };
+		CF312DB327F61112006E9DA8 /* RatesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF312DB227F61112006E9DA8 /* RatesManager.swift */; };
 		CF312DB527F6445D006E9DA8 /* EntryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF312DB427F6445D006E9DA8 /* EntryVC.swift */; };
-		CF312DB927F6482E006E9DA8 /* ListTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF312DB827F6482E006E9DA8 /* ListTableVC.swift */; };
-		CF312DBB27F64960006E9DA8 /* CursesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF312DBA27F64960006E9DA8 /* CursesManager.swift */; };
+		CF67AFBA28186B3400BB4B94 /* ListTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67AFB928186B3400BB4B94 /* ListTableVC.swift */; };
+		CF8B8909281BF33F0031D6EF /* RausableCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B8908281BF33F0031D6EF /* RausableCellVC.swift */; };
 		CFA2DF8127F60D7800A700FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA2DF8027F60D7800A700FB /* AppDelegate.swift */; };
 		CFA2DF8327F60D7800A700FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA2DF8227F60D7800A700FB /* SceneDelegate.swift */; };
 		CFA2DF8527F60D7800A700FB /* ExchangeCalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA2DF8427F60D7800A700FB /* ExchangeCalculatorVC.swift */; };
@@ -20,10 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CF312DB227F61112006E9DA8 /* ExchangeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeManager.swift; sourceTree = "<group>"; };
+		6715D30E27FF23EA003A7234 /* ExchangeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeManager.swift; sourceTree = "<group>"; };
+		CF312DB227F61112006E9DA8 /* RatesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesManager.swift; sourceTree = "<group>"; };
 		CF312DB427F6445D006E9DA8 /* EntryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryVC.swift; sourceTree = "<group>"; };
-		CF312DB827F6482E006E9DA8 /* ListTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableVC.swift; sourceTree = "<group>"; };
-		CF312DBA27F64960006E9DA8 /* CursesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursesManager.swift; sourceTree = "<group>"; };
+		CF67AFB928186B3400BB4B94 /* ListTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableVC.swift; sourceTree = "<group>"; };
+		CF8B8908281BF33F0031D6EF /* RausableCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RausableCellVC.swift; sourceTree = "<group>"; };
 		CFA2DF7D27F60D7800A700FB /* NBP Exchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NBP Exchange.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFA2DF8027F60D7800A700FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFA2DF8227F60D7800A700FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,8 +81,8 @@
 		CFA2DF9427F60D8300A700FB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CF312DB227F61112006E9DA8 /* ExchangeManager.swift */,
-				CF312DBA27F64960006E9DA8 /* CursesManager.swift */,
+				CF312DB227F61112006E9DA8 /* RatesManager.swift */,
+				6715D30E27FF23EA003A7234 /* ExchangeManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -96,9 +98,10 @@
 		CFA2DF9627F60D9000A700FB /* Control */ = {
 			isa = PBXGroup;
 			children = (
-				CFA2DF8427F60D7800A700FB /* ExchangeCalculatorVC.swift */,
 				CF312DB427F6445D006E9DA8 /* EntryVC.swift */,
-				CF312DB827F6482E006E9DA8 /* ListTableVC.swift */,
+				CFA2DF8427F60D7800A700FB /* ExchangeCalculatorVC.swift */,
+				CF67AFB928186B3400BB4B94 /* ListTableVC.swift */,
+				CF8B8908281BF33F0031D6EF /* RausableCellVC.swift */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -176,11 +179,12 @@
 			files = (
 				CFA2DF8527F60D7800A700FB /* ExchangeCalculatorVC.swift in Sources */,
 				CFA2DF8127F60D7800A700FB /* AppDelegate.swift in Sources */,
+				6715D30F27FF23EA003A7234 /* ExchangeManager.swift in Sources */,
 				CF312DB527F6445D006E9DA8 /* EntryVC.swift in Sources */,
-				CF312DB327F61112006E9DA8 /* ExchangeManager.swift in Sources */,
+				CF67AFBA28186B3400BB4B94 /* ListTableVC.swift in Sources */,
+				CF312DB327F61112006E9DA8 /* RatesManager.swift in Sources */,
 				CFA2DF8327F60D7800A700FB /* SceneDelegate.swift in Sources */,
-				CF312DBB27F64960006E9DA8 /* CursesManager.swift in Sources */,
-				CF312DB927F6482E006E9DA8 /* ListTableVC.swift in Sources */,
+				CF8B8909281BF33F0031D6EF /* RausableCellVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

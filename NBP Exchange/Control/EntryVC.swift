@@ -6,6 +6,8 @@ import UIKit
 
 class EntryVC: UIViewController {
 
+    let exchangeManager = ExchangeManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -13,7 +15,7 @@ class EntryVC: UIViewController {
     }
     
     @IBAction func CursesButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: "toCurses", sender: .none)
+      //
     }
     
     @IBAction func CalculatorButtonPressed(_ sender: Any) {
